@@ -1,7 +1,6 @@
 package org.example.entities;
 
 import org.apache.commons.lang3.StringUtils;
-import org.example.entities.Element;
 
 import java.util.ArrayList;
 import java.util.List;
