@@ -1,6 +1,6 @@
 package org.example.entities;
 
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class MultiElement {
 
     public MultiElement(String[] strings) {
         for (int i = 0; i < strings.length; i++) {
-            if (!strings[i].isEmpty() && !StringUtils.isNumeric(strings[i])) {
+            if (!strings[i].isEmpty() && !NumberUtils.isNumber(strings[i])) {
                 skip = true;
                 break;
             }
